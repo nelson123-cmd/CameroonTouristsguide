@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Tourism-Booking </title>
+    <link rel="stylesheet" type="text/css" href="./css/booking.css">
+    <!-- favicon image -->
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/93e835d178.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <!-- this is the whole header and it holds top-bar and navigation bar -->
+        <header class="Overall-package-conatiner">
+            <!-- this is the top bar start-->
+            <section class="top-bar">
+                <!-- left side address in top bar -->
+                <div class="off-address">
+                    <small><i class="fa-solid fa-location-dot"></i>123 street , TamilNadu , India</small>
+                    <small><i class="fa-solid fa-phone"></i>+0123456789</small>
+                    <small><i class="fa-solid fa-envelope-open"></i>tourist@gmail.com</small>
+                </div> 
+                <!-- right side social media in top bar -->   
+                <div class="right-social">
+                    <i class="fa-brands fa-twitter" ></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </section>
+            <!-- top bar ends -->
+            <!-- navigation bar and banner started --> 
+            <section class="banner">
+                <nav id="top">
+                    <!-- logo -->
+                    <h1><i class="fa-solid fa-location-dot"></i> TOURIST</h1> 
+                    <!-- this input,label and bar icons for responsive navigation bar -->
+                    <input type="checkbox" id="menu-bar"/>
+                    <label for="menu-bar"><i class="fa-solid fa-bars bar-menu"></i><i class="fa-solid fa-x x-bar"></i></label>
+                    <!--<label for="menu-bar"></label>-->
+                    <!-- navigation links -->
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="./index.html">home</a></li>
+                            <li><a href="./about.html">about</a></li>
+                            <li><a href="./services.html">services</a></li>
+                            <li><a href="./packages.html">packages</a></li>
+                            <li class="dropdown-li">
+                            <a>pages <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./destination.html">destination</a></li>
+                                <li><a href="./travelguides.html">travel guides</a></li>
+                                <li class="pp"><a href="./booking.html">booking</a></li>
+                                <li><a href="./testimonial.html">testimonial</a></li>
+                                <li><a href="./gallery.html">gallery</a></li>
+                            </ul>
+                            <li><a href="./contact.html">contact</a></li>
+                            <li class="last-child"><a href="./register.html">register</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <h1 class="pack"> Booking </h1>
+            </section>     
+        </header>
+    </main> 
+    <!-- <-------- Overall Booking container page start --------->
+    <main class="booking-contains">
+        <!-- <----- Process container start ------>
+        <main class="process-container">
+                    <article class="topic-container">
+                        <figure class="left-side">
+                            <hr class="code top"></hr>
+                            <hr class="code bottom"></hr>
+                        </figure>
+                        <h3 class="topic"> PROCESS </h3>
+                        <figcaption class="right-side">
+                            <hr class="code top"></hr>
+                            <hr class="code bottom"></hr>
+                        </figcaption>
+                    </article>
+                    <h1> 3 Easy Steps </h1>
+                    <article class="easy-steps">
+                        <!-- <------- designation ------>
+                        <div>
+                            <aside>
+                                <h3> Choose A Destination </h3>
+                                <figure>
+                                    <hr class="line1">
+                                    <hr class="line2">
+                                </figure>
+                                <p> A designation is a description, name, or title that is given to someone or something. Designation is the fact of giving that description, name, or title.  </p>
+                            </aside>
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <!-- <------- pay online ------> 
+                        <div>
+                            <aside>
+                                <h3> Pay Online </h3>
+                                <figure>
+                                    <hr class="line1">
+                                    <hr class="line2">
+                                </figure>
+                                <p> Send, Remit money to India using SBI Express Remit: Secured and one of the safest ways to send your money to India from US, UK and East countries. </p>
+                            </aside>
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <!-- <----- fly today ---------> 
+                        <div>
+                            <aside>
+                                <h3> Fly Today </h3>
+                                <figure>
+                                    <hr class="line1">
+                                    <hr class="line2">
+                                </figure>
+                                <p> Book flight tickets online with Cleartrip & get the cheapest flights. Get best deals on domestic flight booking & international flight booking with great . </p>
+                            </aside>
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+                    </article>
+                </main>                    
+                        <!-- <------ Online Booking container start ----->
+        <main class="booking-container">
+            <header>
+                <article>
+                    <h3> BOOKING </h3>
+                    <h1> Online Booking </h1>
+                    <p> The 24/7 availability of these platforms means that travelers, Online travel agencies provide travelers with access to an extensive array of options. </p>
+                    <p> With online booking systems, travelling and tourism have become much more streamlined and convenient. This advantages travel operators, agents, and car rental companies, as it simplifies the process for their clients to book tours, trips, airfare tickets, hotel stays, and other services with only a few clicks online. </p>
+                    <button> Read More </button>
+                </article>
+                <form>
+                    <h1> Book A Tour </h1>
+                    <article class="name-email">
+                        <div>
+                            <input type="text" id="your-name" required />
+                            <label for="your-name"> Your Name </label>
+                        </div>
+                        <div>
+                            <input type="email" id="email" required />
+                            <label for="email"> Your Email </label>
+                        </div>
+                    </article>
+                    <article class="date-des">
+                        <div>
+                            <input id="date-time" type="datetime-local" required/>
+                            <label for="date-time" class="date"> Date & Time </label>
+                        </div>
+                        <div>
+                            <select id="desig" required> 
+                                <option value="designation1"> none --</option>
+                                <option value="designation1"> Designation 1</option>
+                                <option value="designation2"> Designation 2</option>
+                                <option value="designation3"> Designation 3</option>
+                            </select>
+                            <label for="desig"> Designation </label>
+                        </div>
+                    </article>
+                    <figure>
+                        <textarea id="Special" rows="2" required></textarea>
+                        <label for="Special"> Special request : </label>
+                    </figure>
+                    <button> Book Now </button>
+                </form>
+            </header>
+        </main> 
+        <!-- <---- Online Booking container end ------> 
+        <!-- <-------- Overall Booking container page end --------->
+    </main>
+        <!-- <------ footer container start ------>                
+    <footer>
+        <!-- company block -->
+        <div class="footer-content">
+            <section class="company">
+                <h3>Company</h3>
+                <p><i class="fa-solid fa-angle-right"></i>About Us</p>
+                <p><i class="fa-solid fa-angle-right"></i>Contact Us</p>
+                <p><i class="fa-solid fa-angle-right"></i>Privacy Policy</p>
+                <p><i class="fa-solid fa-angle-right"></i>Terms & Condition</p>
+                <p><i class="fa-solid fa-angle-right"></i>FAQs & Help</p>
+            </section>
+            <!-- contact block -->
+            <section class="contact">
+                <h3>Contact</h3>
+                <p><i class="fa-solid fa-location-dot"></i>123 Street,TamilNadu,India</p>
+                <p><i class="fa-solid fa-phone"></i>+9585407860</p>
+                <p><i class="fa-solid fa-envelope-open"></i>info@tourist.com</p>
+                <!-- contact icons in footer -->
+                <div class="contact-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </section>
+            <!-- gallery block -->
+            <section class="gallery">
+                <h3>Gallery</h3>
+                <div class="img-row-1">
+                    <img src="./images/destination-1.jpg"/>
+                    <img src="./images/destination-2.jpg"/>
+                    <img src="./images/destination-3.jpg"/>
+                </div>
+                <div class="img-row-2">
+                    <img src="./images/destination-4.jpg"/>
+                    <img src="./images/destination-3.jpg"/>
+                    <img src="./images/destination-1.jpg"/> 
+                </div>
+            </section>
+            <!-- news letter block -->
+            <section class="newsletter">
+                <h3>News Letter</h3>
+                <p>Keep close wit us.And book your memorable days</p>
+                <div class="footer-search">
+                    <input type="search"/>
+                    <button>Sign Up</button>
+                </div>
+            </section>
+        </div>    
+        <!--footer content div-->
+        <hr>
+        <section class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>Tourist-Website,All Rights Reserved.Designed by HTML5,CSS3,Bootstrap5</p>
+            <div class="foot-nav">
+                <span>Home</span>
+                <span>Cookies</span>
+                <span>Help</span>
+                <span class="bord-unset">FAQs</span>
+            </div>
+        </section>
+    </footer>
+    <div class="to-top">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>                      
+    <!-- <--------- footer container end ----------->
+
+</body>
+</html>
