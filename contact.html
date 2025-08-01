@@ -27,9 +27,9 @@
             <section class="top-bar">
                 <!-- left side address in top bar -->
                 <div class="off-address">
-                   <small><i class="fa-solid fa-location-dot"></i>123 street,Bonaberi, Douala</small>
+                   <small><i class="fa-solid fa-location-dot"></i>123 street,Bonaberi, Douala, Cameroon</small>
                    <small><i class="fa-solid fa-phone"></i>+237672706075</small>
-                   <small><i class="fa-solid fa-envelope-open"></i>tourist@gmail.com</small>
+                   <small><i class="fa-solid fa-envelope-open"></i>bbuhlami@gmail.com</small>
                    <small><i class="fa-brands fa-facebook"></i>Cameroon Tourist Guide</small>
                 </div> 
                 <!-- right side social media in top bar -->   
@@ -67,8 +67,7 @@
                     <li><a href="./testimonial.html">testimonial</a></li>
                 </ul>
             </li>
-              <li><a href="./contact.html">contact</a></li>
-              <li class="last-child"><a href="./register.html">register</a></li>
+              <li><a href="./contact.html">contact</a></li>              
             </ul>
          </div>
       </nav>
@@ -122,7 +121,7 @@
                         <button><i class="fa-solid fa-envelope"></i></button>
                         <div class="form-move">
                             <h4>Email</h4>
-                            <p>bbuhlami3007@gmail.com</p>
+                            <p>bbuhlami@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -140,15 +139,17 @@
                  <!------------------------------------ first inner box details  -->
 
 
+                <!-- CONTACT FORM -->
                 <div class="third-form-box">
-                    <form action="">
-                        <input type="text" placeholder="Your Name" class="first-in space-in">
-                        <input type="text" placeholder="Your Email" class="first-in">
-                        <input type="text" placeholder="Subject" class="last-in">
-                        <textarea name="" id="" cols="30" rows="4" placeholder="Message" class="last-in"></textarea>
-                        <button >Send Message</button>
+                    <form action="http://localhost:5000/contact" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" class="first-in space-in" required>
+                        <input type="email" name="email" placeholder="Your Email" class="first-in" required>
+                        <input type="text" name="subject" placeholder="Subject" class="last-in" required>
+                        <textarea name="message" id="" cols="30" rows="4" placeholder="Message" class="last-in" required></textarea>
+                        <button type="submit">Send Message</button>
                     </form>
                 </div>
+
             </div>
         </div>
 
@@ -169,7 +170,7 @@
                <h3>Contact</h3>
                <p><i class="fa-solid fa-location-dot"></i>123 Street,TamilNadu,India</p>
                <p><i class="fa-solid fa-phone"></i>+237672706075</p>
-               <p><i class="fa-solid fa-envelope-open"></i>bbuhlami3007@gmail.com</p>
+               <p><i class="fa-solid fa-envelope-open"></i>bbuhlami@gmail.com</p>
                <small><i class="fa-brands fa-facebook"></i>Cameroon Tourist Guide</small>
                <!-- contact icons in footer -->
                <div class="contact-icons">

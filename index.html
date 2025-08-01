@@ -26,7 +26,7 @@
                             <div class="off-address">
                                <small><i class="fa-solid fa-location-dot"></i>123 street , Bamenda , Cameroon</small>
                                <small><i class="fa-solid fa-phone"></i>+237672706075</small>
-                               <small><i class="fa-solid fa-envelope-open"></i>bbuhlami3007@gmail.com</small>
+                               <small><i class="fa-solid fa-envelope-open"></i>bbuhlami@gmail.com</small>
                                <small><i class="fa-brands fa-facebook"></i>Cameroon Tourist Guide</small>
                             </div> 
                             <!-- right side social media in top bar -->   
@@ -66,7 +66,7 @@
                             </ul>
                         </li>
                           <li><a href="./contact.html">contact</a></li>
-                          <li class="last-child"><a href="./register.html">register</a></li>
+                          
                         </ul>
                      </div>
                   </nav>
@@ -465,39 +465,53 @@ We are more than just a guide — we are your local companion, sharing the heart
                <p> With online booking systems, travelling and tourism have become much more streamlined and convenient. This advantages travel operators, agents, and car rental companies, as it simplifies the process for their clients to book tours, trips, airfare tickets, hotel stays, and other services with only a few contacts and conversation online. </p>
                <button> Read More </button>
            </article>
-           <form>
-               <h1> Book A Tour </h1>
-               <article class="name-email">
-                   <div>
-                       <input type="text" id="your-name" required />
-                       <label for="your-name"> Your Name </label>
-                   </div>
-                   <div>
-                       <input type="email" id="email" required />
-                       <label for="email"> Your Email </label>
-                   </div>
-               </article>
-               <article class="date-des">
-                   <div>
-                       <input id="date-time" type="datetime-local" required/>
-                       <label for="date-time" class="date"> Date & Time </label>
-                   </div>
-                   <div>
-                       <select id="desig" required> 
-                           <option value="designation1"> none --</option>
-                           <option value="designation1"> Designation 1</option>
-                           <option value="designation2"> Designation 2</option>
-                           <option value="designation3"> Designation 3</option>
-                       </select>
-                       <label for="desig"> Designation </label>
-                   </div>
-               </article>
-               <figure>
-                   <textarea id="Special" rows="2" required></textarea>
-                   <label for="Special"> Special request : </label>
-               </figure>
-               <button> Book Now </button>
-           </form>
+           <form action="http://localhost:5000/booking" method="POST">
+
+              <h1> Book A Tour </h1>               
+              <article class="name-email">
+                  <div>
+                      <input type="text" id="your-name" name="name" required />
+                      <label for="your-name"> Your Name </label>
+                  </div>
+                  <div>
+                      <input type="email" id="email" name="email" required />
+                      <label for="email"> Your Email </label>
+                  </div>
+              </article>
+              <article class="date-des">
+                  <div>
+                      <input id="dat" type="date" name="date" required />
+                      
+                      <label for="date"> date </label>
+                  </div>
+                  <div>
+                      <input id="time" type="time-local" name="time" required />
+                      <label for="time">local time </label>
+                  </div>
+                  <div>
+                      <select id="desig" name="destination" required> 
+                          <option value="designation1"> destination --</option>
+                          <option value="Adamawa"> Adamawa </option>
+                          <option value="Centre"> Centre </option>
+                          <option value="East"> East </option>
+                          <option value="Far North"> Far North </option>
+                          <option value="Littoral"> Littoral </option>
+                          <option value="North"> North </option>
+                          <option value="North West"> North West </option>
+                          <option value="West"> West </option>
+                          <option value="South"> South </option>
+                          <option value="South West"> South West </option>
+                      </select>
+                      <label for="desig"> Designation </label>
+                  </div>
+              </article>
+              <figure>
+                  <textarea id="Special" name="special_request" rows="2" required></textarea>
+                  <label for="Special"> Special request : </label>
+              </figure>
+              <button> Book Now </button>
+          </form>
+
        </header>
    </main> 
    <!-- <---- Online Booking container end ------> 

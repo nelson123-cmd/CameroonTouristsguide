@@ -16,9 +16,9 @@
             <section class="top-bar">
                 <!-- left side address in top bar -->
                 <div class="off-address">
-                    <small><i class="fa-solid fa-location-dot"></i>123 street , TamilNadu , India</small>
-                    <small><i class="fa-solid fa-phone"></i>+0123456789</small>
-                    <small><i class="fa-solid fa-envelope-open"></i>tourist@gmail.com</small>
+                    <small><i class="fa-solid fa-location-dot"></i>123 street , Bonaberi, Douala</small>
+                    <small><i class="fa-solid fa-phone"></i>+23767272706075</small>
+                    <small><i class="fa-solid fa-envelope-open"></i>bbuhlami@gmail.com</small>
                 </div> 
                 <!-- right side social media in top bar -->   
                 <div class="right-social">
@@ -56,7 +56,7 @@
                                 <li><a href="./gallery.html">gallery</a></li>
                             </ul>
                             <li><a href="./contact.html">contact</a></li>
-                            <li class="last-child"><a href="./register.html">register</a></li>
+
                         </ul>
                     </div>
                 </nav>
@@ -129,39 +129,53 @@
                     <p> With online booking systems, travelling and tourism have become much more streamlined and convenient. This advantages travel operators, agents, and car rental companies, as it simplifies the process for their clients to book tours, trips, airfare tickets, hotel stays, and other services with only a few clicks online. </p>
                     <button> Read More </button>
                 </article>
-                <form>
-                    <h1> Book A Tour </h1>
-                    <article class="name-email">
-                        <div>
-                            <input type="text" id="your-name" required />
-                            <label for="your-name"> Your Name </label>
-                        </div>
-                        <div>
-                            <input type="email" id="email" required />
-                            <label for="email"> Your Email </label>
-                        </div>
-                    </article>
-                    <article class="date-des">
-                        <div>
-                            <input id="date-time" type="datetime-local" required/>
-                            <label for="date-time" class="date"> Date & Time </label>
-                        </div>
-                        <div>
-                            <select id="desig" required> 
-                                <option value="designation1"> none --</option>
-                                <option value="designation1"> Designation 1</option>
-                                <option value="designation2"> Designation 2</option>
-                                <option value="designation3"> Designation 3</option>
-                            </select>
-                            <label for="desig"> Designation </label>
-                        </div>
-                    </article>
-                    <figure>
-                        <textarea id="Special" rows="2" required></textarea>
-                        <label for="Special"> Special request : </label>
-                    </figure>
-                    <button> Book Now </button>
-                </form>
+                <form action="http://localhost:5000/booking" method="POST">
+
+              <h1> Book A Tour </h1>               
+              <article class="name-email">
+                  <div>
+                      <input type="text" id="your-name" name="name" required />
+                      <label for="your-name"> Your Name </label>
+                  </div>
+                  <div>
+                      <input type="email" id="email" name="email" required />
+                      <label for="email"> Your Email </label>
+                  </div>
+              </article>
+              <article class="date-des">
+                  <div>
+                      <input id="dat" type="date" name="date" required />
+                      
+                      <label for="date"> date </label>
+                  </div>
+                  <div>
+                      <input id="time" type="time-local" name="time" required />
+                      <label for="time">local time </label>
+                  </div>
+                  <div>
+                      <select id="desig" name="destination" required> 
+                          <option value="designation1"> destination --</option>
+                          <option value="Adamawa"> Adamawa </option>
+                          <option value="Centre"> Centre </option>
+                          <option value="East"> East </option>
+                          <option value="Far North"> Far North </option>
+                          <option value="Littoral"> Littoral </option>
+                          <option value="North"> North </option>
+                          <option value="North West"> North West </option>
+                          <option value="West"> West </option>
+                          <option value="South"> South </option>
+                          <option value="South West"> South West </option>
+                      </select>
+                      <label for="desig"> Designation </label>
+                  </div>
+              </article>
+              <figure>
+                  <textarea id="Special" name="special_request" rows="2" required></textarea>
+                  <label for="Special"> Special request : </label>
+              </figure>
+              <button> Book Now </button>
+          </form>
+
             </header>
         </main> 
         <!-- <---- Online Booking container end ------> 
@@ -182,9 +196,9 @@
             <!-- contact block -->
             <section class="contact">
                 <h3>Contact</h3>
-                <p><i class="fa-solid fa-location-dot"></i>123 Street,TamilNadu,India</p>
-                <p><i class="fa-solid fa-phone"></i>+9585407860</p>
-                <p><i class="fa-solid fa-envelope-open"></i>info@tourist.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>123 Street,DOUALA, CAMEROON</p>
+                <p><i class="fa-solid fa-phone"></i>+237672706075</p>
+                <p><i class="fa-solid fa-envelope-open"></i>bbuhlami@gmail.com</p>
                 <!-- contact icons in footer -->
                 <div class="contact-icons">
                     <i class="fa-brands fa-twitter"></i>
