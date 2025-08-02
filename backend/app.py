@@ -1,6 +1,7 @@
 import os
 from flask import Flask, request
 from flask import Flask, request
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -9,6 +10,11 @@ bookings = []
 
 #temporary message storage
 messages = []
+
+#templates' folder
+@app.route('/')
+def home():
+    return render_template('index.html')  
 
 @app.route('/contact', methods=['POST'])
 def contact():
