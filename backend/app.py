@@ -49,8 +49,7 @@ def contact():
 def show_messages():
     html = "<h2>Contact Messages</h2><table border='1'><tr><th>Name</th><th>Email</th><th>Subject</th><th>Message</th></tr>"
     for msg in messages:
-        
-    html += f"<tr><td>{msg['name']}</td><td>{msg['email']}</td><td>{msg['subject']}</td><td>{msg['message']}</td></tr>"
+        html += f"<tr><td>{msg['name']}</td><td>{msg['email']}</td><td>{msg['subject']}</td><td>{msg['message']}</td></tr>"
     html += "</table>"
     return html
 
