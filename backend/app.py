@@ -11,7 +11,7 @@ bookings = []
 #temporary message storage
 messages = []
 
-#templates' folder
+# homepage route templates' folder
 @app.route('/')
 def home():
     return render_template('index.html')  
